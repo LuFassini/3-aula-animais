@@ -11,6 +11,10 @@ export class AnimaisList {
     buscarAnimalPorID(id) {
       return this.animais.find((animal) => animal.id === id);
     }
+
+    buscarAnimalPorTipo(tipo) {
+      return this.animais.filter((animal) => animal.tipo.toLowerCase() === tipo.toLowerCase());
+    }
   
     criarAnimal(animal) {
       this.animais.push(animal);
