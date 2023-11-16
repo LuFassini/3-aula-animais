@@ -1,10 +1,10 @@
-
 import {AnimaisList} from '../models/animais/listanimais.js';
 
 const list = new AnimaisList();
 
 export const  buscarTodosAnimais = (req, res) => {
   const animais =  AnimaisList. buscarTodosAnimais();
+ 
   if (animais.length) {
     return res.status(200).json(animais);
   }
