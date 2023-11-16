@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 
 export class Animal {
-  constructor(nome, idade, tipo, cor,  imagem) {
+  constructor(nome, idade, tipo, cor, vacina,  imagem) {
     this.id = this.generateId();
     this.nome = nome;
     this.idade = idade;
